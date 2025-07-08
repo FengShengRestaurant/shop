@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import Notification from './Notification'; // Import Notifications component
 import { Link } from 'react-router-dom';
+import Testimonials from './Testimonials';
 export default function Hero() {
   const { language } = useLanguage();
 
@@ -20,7 +21,7 @@ export default function Hero() {
         '我们提供正宗的客家菜，带给您健康、美味的用餐体验。快来尝试我们的特色美食吧！',
       buttonText: '我们的菜单',
     },
-    malay: {
+    ms: {
       welcome: 'Selamat Datang ke',
       businessName: 'Restoran Feng Sheng',
       description:
@@ -48,7 +49,7 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-bright-yellow via-cream to-orange opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56 text-center">
+        <div className="mx-auto max-w-3xl pt-28 pb-32 sm:pt-28 sm:pb-48 lg:pb-56  text-center">
           <h1 className="text-center text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl leading-tight">
             {welcome}
             <br />
@@ -68,8 +69,9 @@ export default function Hero() {
         </div>
       </div>
 
+      <Testimonials />
       {/* Notifications Section */}
-      <Notification id='notification'/>
+      <Notification id='notification' />
     </div>
   );
 }

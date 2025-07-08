@@ -6,7 +6,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
-import CloseIcon from '@mui/icons-material/Close';
 import EventIcon from '@mui/icons-material/Event';
 import SellIcon from '@mui/icons-material/Sell';
 import AnnouncementIcon from '@mui/icons-material/Announcement';
@@ -67,7 +66,7 @@ const Notification = () => {
             <h1 className="mb-10 text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl leading-tight">
                 {language === 'en' && 'Latest Messages from the Shop'}
                 {language === 'zh' && '店铺最新消息'}
-                {language === 'malay' && 'Mesej Terkini dari Kedai'}
+                {language === 'ms' && 'Mesej Terkini dari Kedai'}
             </h1>
 
             <Box className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -125,7 +124,7 @@ const Notification = () => {
                 <Typography variant="body1" className="text-center text-gray-600 mt-4">
                     {language === 'en' && 'No active notifications at the moment.'}
                     {language === 'zh' && '目前没有活跃的通知。'}
-                    {language === 'malay' && 'Tiada notifikasi aktif buat masa ini.'}
+                    {language === 'ms' && 'Tiada notifikasi aktif buat masa ini.'}
                 </Typography>
             )}
         </div>

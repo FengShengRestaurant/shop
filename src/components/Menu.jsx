@@ -1,59 +1,84 @@
-import React from 'react';
-import { useLanguage } from '../context/LanguageContext'; // Import Language Context
+import React, { useEffect, useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
-const Menu = () => {
-  const { language } = useLanguage(); // Access the current language
+import MenuItem from './MenuItem';
 
-  // Multilingual content
+// Import menu item JSON
+import MenuItemData from '../data/menu.json';
+
+const Menu = () => {
+  const { language } = useLanguage();
+  const [menuItems, setMenuItems] = useState([]);
+  const [filterType, setFilterType] = useState('soup'); // Default shows all
+
+  useEffect(() => {
+    setMenuItems(MenuItemData.menu_items);
+  }, []);
+
   const content = {
-    en: {
-      heading: 'Menu Under Preparation',
-      message: 'We are currently working hard to bring you our delicious offerings. Stay tuned for our menu updates!',
-      button: 'Go Back to Home',
-    },
-    zh: {
-      heading: '菜单准备中',
-      message: '我们正在努力为您带来美味的菜品。敬请期待我们的菜单更新！',
-      button: '返回首页',
-    },
-    malay: {
-      heading: 'Menu Sedang Disediakan',
-      message: 'Kami sedang bekerja keras untuk membawa anda hidangan yang lazat. Nantikan kemas kini menu kami!',
-      button: 'Kembali ke Halaman Utama',
-    },
+    en: { heading: 'Menu Under Preparation', message: 'We are working hard to bring you delicious offerings!', button: 'Go Back to Home' },
+    zh: { heading: '菜单准备中', message: '我们正在努力为您带来美味的菜品。', button: '返回首页' },
+    ms: { heading: 'Menu Sedang Disediakan', message: 'Kami sedang bekerja keras untuk membawa anda hidangan lazat.', button: 'Kembali ke Halaman Utama' },
   };
 
-  // Select the current language content
   const { heading, message, button } = content[language] || content.en;
 
+  // Filter menu items based on the selected type
+  const filteredMenu =
+    filterType === '' ? menuItems : menuItems.filter((item) => item.type === filterType);
+
   return (
-    <div className="bg-white min-h-screen flex flex-col">
-      <div className="flex-grow flex flex-col justify-center items-center relative isolate">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-bright-yellow via-cream to-orange opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          />
+    <div className="bg-white min-h-screen">
+      {/* Navigation Bar */}
+      <nav className="sticky top-20 z-50 bg-white shadow-md">
+        <div className="flex gap-4 p-4 overflow-x-auto scrollbar-hide">
+
+          {/* Menu Categories */}
+          {menuItems.map((category) => (
+            <button
+              key={category.type}
+              onClick={() => {
+                setFilterType(category.type);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className={`text-lg px-3 lg:px-4 py-1  lg:py-2 whitespace-nowrap rounded-md hover:bg-bright-yellow ease-in-out duration-200 ${filterType === category.type
+                  ? 'bg-orange font-bold'
+                  : 'text-gray-700 hover:bg-orange-200 font-semibold'
+                }`}
+            >
+              {category.name[language]}
+            </button>
+          ))}
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 text-center" id="menu-content">
-          <h1 className="text-4xl font-bold text-brown mb-4">{heading}</h1>
-          <p className="text-lg text-gray-600">{message}</p>
-          <div className="mt-8">
+      </nav>
+
+      {/* Main Content */}
+      <main className="p-4 sm:p-8">
+        {filteredMenu.length === 0 ? (
+          <div className="text-center mt-24">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">{heading}</h1>
+            <p className="text-lg text-gray-600">{message}</p>
             <Link
               to="/"
-              className="inline-block rounded-md bg-orange px-5 py-3 text-white font-semibold hover:bg-bright-yellow hover:text-brown duration-300 ease-in-out"
+              className="inline-block mt-8 rounded-md bg-orange px-5 py-3 text-white font-semibold hover:bg-bright-yellow hover:text-brown duration-300"
             >
               {button}
             </Link>
           </div>
-        </div>
-      </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+            {filteredMenu.map((category) =>
+              category.items.map((item, index) => (
+                <MenuItem
+                  key={index}
+                  name={item.name[language]}
+                  photoUrl={item.photo_url || 'default-image.png'}
+                />
+              ))
+            )}
+          </div>
+        )}
+      </main>
     </div>
   );
 };

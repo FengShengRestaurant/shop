@@ -26,7 +26,7 @@ const Footer = () => {
     content[language] || content.en;
 
   return (
-    <footer className="bg-brown text-cream py-6">
+    <footer className="z-10 bg-brown text-cream py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
         {/* Left Section */}
         <p

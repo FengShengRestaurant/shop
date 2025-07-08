@@ -1,0 +1,280 @@
+{
+  "search_metadata": {
+    "id": "686c8c82408027ec7f8f8e3a",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/63c31b678cc666e9/686c8c82408027ec7f8f8e3a.json",
+    "created_at": "2025-07-08 03:12:02 UTC",
+    "processed_at": "2025-07-08 03:12:02 UTC",
+    "google_maps_reviews_url": "https://www.google.com/maps/place/data=!4m7!3m6!1s0x31da6c3ccc1bacf3:0x8d2088fcb48aba89!5m2!4m1!1i2!9m1!1b1?hl=en&gl=",
+    "raw_html_file": "https://serpapi.com/searches/63c31b678cc666e9/686c8c82408027ec7f8f8e3a.html",
+    "prettify_html_file": "https://serpapi.com/searches/63c31b678cc666e9/686c8c82408027ec7f8f8e3a.prettify",
+    "total_time_taken": 1.21
+  },
+  "search_parameters": {
+    "engine": "google_maps_reviews",
+    "place_id": "ChIJ86wbzDxs2jERibqKtPyIII0",
+    "hl": "en",
+    "sort_by": "newestFirst"
+  },
+  "place_info": {
+    "title": "Feng Sheng (Bitter Gourd Soup) Restaurant",
+    "address": "64, Jalan Bakawali 48, Taman Johor Jaya, 81100 Johor Bahru, Johor Darul Ta'zim, Malaysia",
+    "rating": 4.4,
+    "reviews": 152,
+    "type": "Chinese restaurant"
+  },
+  "topics": [
+    {
+      "keyword": "price",
+      "mentions": 11,
+      "id": "/m/01d_1l"
+    },
+    {
+      "keyword": "fried pork",
+      "mentions": 2,
+      "id": "/g/11cnb0gr1k"
+    },
+    {
+      "keyword": "fish",
+      "mentions": 2,
+      "id": "/m/07pbfj"
+    }
+  ],
+  "reviews": [
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcll6SnFaSFo0TTFwT1oxcGxjMjlaVG1WWmFWRRAB!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CAIQACodChtycF9oOm1rYzJqZHZ4M1pOZ1plc29ZTmVZaVE%7C0cOJLcp6ueZ%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "5 days ago",
+      "iso_date": "2025-07-02T14:43:52Z",
+      "iso_date_of_last_edit": "2025-07-02T14:43:52Z",
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT20xcll6SnFaSFo0TTFwT1oxcGxjMjlaVG1WWmFWRRAB",
+      "user": {
+        "name": "Ng Eric",
+        "link": "https://www.google.com/maps/contrib/107741330528420481524?hl=en-US",
+        "contributor_id": "107741330528420481524",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjXxVnB3banKvCpRXUnoFQeqyrQaNXbiJf0ArWKJrylHSb0kWUMOOg=s120-c-rp-mo-ba3-br100",
+        "local_guide": true,
+        "reviews": 49,
+        "photos": 103
+      },
+      "snippet": "Sliced fish in bittergourd soup, minced pork with tofu and sweet potato leaves.\n\nThe fish is not that fresh, but soup is nice. Tofu and veg are above average. Overall not too salty and no msg effect.\n\nBest of all, only RM42! Nothing to complain.",
+      "extracted_snippet": {
+        "original": "Sliced fish in bittergourd soup, minced pork with tofu and sweet potato leaves.\n\nThe fish is not that fresh, but soup is nice. Tofu and veg are above average. Overall not too salty and no msg effect.\n\nBest of all, only RM42! Nothing to complain."
+      },
+      "details": {
+        "food": 4,
+        "service": 4,
+        "atmosphere": 3
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtX0k2R3hnRRAB!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgICm_I6GxgE%7C0cLHdUWZQcp%7C?hl=en-US",
+      "rating": 4.0,
+      "date": "Edited 2 weeks ago",
+      "iso_date": "2021-12-22T01:58:10Z",
+      "iso_date_of_last_edit": "2025-06-23T10:20:15Z",
+      "source": "Google",
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtX0k2R3hnRRAB",
+      "user": {
+        "name": "un F",
+        "link": "https://www.google.com/maps/contrib/102478768807874975481?hl=en-US",
+        "contributor_id": "102478768807874975481",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjXpvopvBY9i-ApTomWknc_d5l4TsRY_a3Po1dCPhoS2Pz8rfx0=s120-c-rp-mo-ba3-br100",
+        "local_guide": true,
+        "reviews": 1,
+        "photos": 1
+      },
+      "details": {
+        "service": 4,
+        "meal_type": "Lunch",
+        "price_per_person": "RM 1–20",
+        "food": 4,
+        "atmosphere": 4,
+        "group_size": "5-8 people",
+        "wait_time": "Up to 10 min"
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VOV0U3YW5seU9yQ3lnRRAB!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKENWE7anlyOrCygE%7CCgwIy9qrwQYQ2PqkngI%7C?hl=en-US",
+      "rating": 4.0,
+      "date": "a month ago",
+      "iso_date": "2025-05-19T08:35:23Z",
+      "iso_date_of_last_edit": "2025-05-19T08:35:23Z",
+      "images": [
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90B3Qw4L_QZK7WGSArEHZTVBgUG_O71vp6SqCSQu9nCofoU7nJSboq9pMy3caR7jw0xUl2bjygmiJqkpj5qBTA1mM92OpXa8dc4bXazyMxmdtHA1s_Yb5MlnsWb0P7yhkzAqlWZB",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90DjsdF2sUXfTEzWoKqZ9pllULRe7Sn5W7-0GrDz-CAC0NyNFEfTLvJeL2EMs51HwmXv55l_BZU4bn_6pEsYlHDAXZ0EyMIe6drclLAg5MapDTkf4u3nA3uulYAMNrDsKL4vYhpp",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90ATSQjeHUiW-ZYQYqiwlvof9h7bfpYSiwFw90rsPa33ptOY9oA0jI9vnaWtd-EQPPl343Hl8DVdC-AuSz_nANYAMyzOoCOqE4I-7A04185F-m530ArOyQhFdu5FUwlXXGOaBHLQ",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90DCHKsx1Qhf2gLguFQZ1tEtMAHfQ-pXX56nhpjsv9sXXZqi9-KMRqC-fo3Y5T67bvLPVK4mvx5QNTHB_b0qEsYB5B5jMjiV0n87Qhb4ZzbwIziuygfxql9kxC43ccn7mHtQeu2q"
+      ],
+      "source": "Google",
+      "review_id": "ChdDSUhNMG9nS0VOV0U3YW5seU9yQ3lnRRAB",
+      "user": {
+        "name": "Leslie Tang",
+        "link": "https://www.google.com/maps/contrib/111105988615073222859?hl=en-US",
+        "contributor_id": "111105988615073222859",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjWdgouvQUnzJdFe1oV_tyH3M_prHN5Ivd7H1ZKllx8RtJ3-sDD1=s120-c-rp-mo-ba5-br100",
+        "local_guide": true,
+        "reviews": 226,
+        "photos": 828
+      },
+      "snippet": "Overall all the dishes are above average.  The Intestine fried with  dried prawn is my favorite and Bittergourd soup.  So far I would say this is a better one than the rest. Price wise is very reasonable.  The ba long long juice is very refreshing too.  Recommend.",
+      "extracted_snippet": {
+        "original": "Overall all the dishes are above average.  The Intestine fried with  dried prawn is my favorite and Bittergourd soup.  So far I would say this is a better one than the rest. Price wise is very reasonable.  The ba long long juice is very refreshing too.  Recommend."
+      },
+      "details": {
+        "meal_type": "Lunch",
+        "price_per_person": "RM 20–40",
+        "food": 4,
+        "service": 4,
+        "atmosphere": 4
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZOGZtUUtnEAE!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgMCY8fmQKg%7CCgwIp4LhwAYQ6Jr8lAI%7C?hl=en-US",
+      "rating": 3.0,
+      "date": "2 months ago",
+      "iso_date": "2025-05-05T04:30:18Z",
+      "iso_date_of_last_edit": "2025-05-05T04:40:07Z",
+      "images": [
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90D9rN-JBBmPRkmtXNvXQ2bNKVUy0bGO7AxtaLZCbePQYoSIuR3_6OLYFryNq4Ns0_oziZBlbusRsf638p7l48zSX8SOg8GI5WsV2ituhsU0ailOJr1hUGAf1h2O-j7IAenXXBhLCg",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90Alo5LlLleNqDvXVeGffkXBMPpnGK3iYNZGb4Ju_ZiRgu9HoXLFBKmfX6kNIFboCmg4QPSs1_6p7ma4P6zgpJ91sdG8KM4KVbXtzY48ji1fMZrmr3_BRqMKvGqxNFdofyeplXk",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90DZuLHv8qPSma2eeXZ5uT58zts0HKfAP0cIopnA3EQRtZYQDsYIZZ4suKB_Y88zm9JydZiBtb9koZsb6DCEbZK2k0cmtWDlLJKcaaB1xSnevUfgsfisghPnxTEN-YOCfj9DcjfgkA",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90CqWiNwZCn521h9JqBQQeV1tmbqjn4qatYso1tFNr7w0U-0M53sNhaVhGCbC7rltbdLi6oG1cb4OaTyMYHKwUvC9BMumewpIWuVPdYcgZBgT6RpHjMbQLadHZhTzbAkcmFVvaAV",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90APq4Jf0fVUfEHsOTZbh1eWboLFoSaSA23M8NVoobB9Y0gaKdghheg5aodLoJ4phTKEWcxsIpGJkDsL5f83eevlqZRPH-wuFALG3bnjboXUp8Q-VhMztzYwNyZfGWbz3kLTJMZxDQ",
+        "https://lh3.googleusercontent.com/geougc-cs/AB3l90C_LUCS4gtDlnBCM3uZPxJW5ctVsmMaPlVOfObHj719i1CiqBAWNT1Qg0lMph_DaumpsV51LAerN1QV9ajN0q0x8VBkBTjMAJXk7WxNDR6ShBCpcmTjX51ipsp2UnY2sOzIdGw"
+      ],
+      "source": "Google",
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUNZOGZtUUtnEAE",
+      "user": {
+        "name": "Yvonne Xinyu Yeoh",
+        "link": "https://www.google.com/maps/contrib/108460614167103837884?hl=en-US",
+        "contributor_id": "108460614167103837884",
+        "thumbnail": "https://lh3.googleusercontent.com/a/ACg8ocIGi34-0aPVU0Qb_AgphGKhHwWnfhRizAGAO0FDXjlk618Xii8=s120-c-rp-mo-ba5-br100",
+        "local_guide": true,
+        "reviews": 204,
+        "photos": 1224
+      },
+      "snippet": "Local fare and taste",
+      "extracted_snippet": {
+        "original": "Local fare and taste"
+      },
+      "details": {
+        "price_per_person": "RM 20–40",
+        "food": 3,
+        "service": 3,
+        "atmosphere": 3,
+        "noise_level": "Moderate noise",
+        "group_size": "3-4 people",
+        "wait_time": "No wait"
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURvMWZqMzFnRRAB!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgMDo1fj31gE%7CCgsI5Y-3wAYQuPiSCw%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "2 months ago",
+      "iso_date": "2025-04-27T06:00:05Z",
+      "iso_date_of_last_edit": "2025-04-27T06:00:05Z",
+      "source": "Google",
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnTURvMWZqMzFnRRAB",
+      "user": {
+        "name": "Wilson Chong Wee sheng",
+        "link": "https://www.google.com/maps/contrib/108331295215496669596?hl=en-US",
+        "contributor_id": "108331295215496669596",
+        "thumbnail": "https://lh3.googleusercontent.com/a/ACg8ocKc7Tr3VEWVFWbM9TLpre82KhwV9YWBjpzjHVyQKsoQoS2o7A=s120-c-rp-mo-ba2-br100",
+        "local_guide": true,
+        "reviews": 7,
+        "photos": 15
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURJaVBUSXZ3RRAB!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgMDIiPTIvwE%7CCgwIpZHKvwYQ6KSS0gI%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2025-04-06T13:59:01Z",
+      "iso_date_of_last_edit": "2025-04-06T13:59:01Z",
+      "source": "Google",
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnTURJaVBUSXZ3RRAB",
+      "user": {
+        "name": "Matt Ho",
+        "link": "https://www.google.com/maps/contrib/107157220020608933710?hl=en-US",
+        "contributor_id": "107157220020608933710",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjUVDfwm3r6g1VgDbfxVGS7tKaYRabsKTIQ51wq6BAwUmuBLY47xww=s120-c-rp-mo-ba4-br100",
+        "local_guide": true,
+        "reviews": 67,
+        "photos": 162
+      },
+      "snippet": "Authentic JB dining experience. Simply didn't want to eat in Aeon mall so searched up online and landed on this place.\n\nWent at 6pm and wasn't crowded at all. Had a sambal Kang kong, bittergourd soup with fish, fried pork (must eat!!), 2 bowls of rice, and 2 drinks. Total bill was 40 ringgit - and our most expensive meal of the day already 🤣\n\nPork was nicely fried, and bittergourd soup wasn't too bitter - still much digestable despite me not liking bitter gourd. Go for it if you like some really value for money zi char.\n\nYoung waiter was very smiley (:",
+      "extracted_snippet": {
+        "original": "Authentic JB dining experience. Simply didn't want to eat in Aeon mall so searched up online and landed on this place.\n\nWent at 6pm and wasn't crowded at all. Had a sambal Kang kong, bittergourd soup with fish, fried pork (must eat!!), 2 bowls of rice, and 2 drinks. Total bill was 40 ringgit - and our most expensive meal of the day already 🤣\n\nPork was nicely fried, and bittergourd soup wasn't too bitter - still much digestable despite me not liking bitter gourd. Go for it if you like some really value for money zi char.\n\nYoung waiter was very smiley (:"
+      },
+      "details": {
+        "service": 5,
+        "meal_type": "Dinner",
+        "price_per_person": "RM 20–40",
+        "food": 5,
+        "atmosphere": 5,
+        "recommended_dishes": "Sweet Potato Leaves",
+        "parking_space": "Plenty of parking",
+        "parking_options": "Free street parking"
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJc0pib0NREAE!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgMDIsJboCQ%7CCgsImMnJvwYQiNLCAQ%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2025-04-06T11:25:12Z",
+      "iso_date_of_last_edit": "2025-04-06T11:25:12Z",
+      "source": "Google",
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTURJc0pib0NREAE",
+      "user": {
+        "name": "kelvin goh",
+        "link": "https://www.google.com/maps/contrib/116103958459451566852?hl=en-US",
+        "contributor_id": "116103958459451566852",
+        "thumbnail": "https://lh3.googleusercontent.com/a/ACg8ocJlAD3qi8E38tZ9FRcngxXtHbKxFaWGa3L0O2TX6B3EhZxk_Q=s120-c-rp-mo-ba3-br100",
+        "local_guide": true,
+        "reviews": 25,
+        "photos": 59
+      },
+      "details": {
+        "service": 5,
+        "meal_type": "Lunch",
+        "price_per_person": "RM 1–20",
+        "food": 5,
+        "atmosphere": 5
+      }
+    },
+    {
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3MklEV1JnEAE!2m1!1s0x0:0x8d2088fcb48aba89!3m1!1s2@1:CIHM0ogKEICAgMCw2IDWRg%7CCgwI1IDbvgYQiLuCggM%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2025-03-16T12:13:08Z",
+      "iso_date_of_last_edit": "2025-03-16T12:13:08Z",
+      "source": "Google",
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTUN3MklEV1JnEAE",
+      "user": {
+        "name": "bear loviie",
+        "link": "https://www.google.com/maps/contrib/109143323767079369913?hl=en-US",
+        "contributor_id": "109143323767079369913",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjXxp7hY6H2SH_yu5gt-crCZXzXMUayoHeAQW5oX_Kh5CbQyKY77=s120-c-rp-mo-br100",
+        "local_guide": true,
+        "reviews": 3,
+        "photos": 1
+      },
+      "snippet": "番薯叶的茎能不能剖一下 ，因为太硬了 ，可能你剖了一下可能比较好吃",
+      "extracted_snippet": {
+        "original": "番薯叶的茎能不能剖一下 ，因为太硬了 ，可能你剖了一下可能比较好吃",
+        "translated": "Can you cut the stems of sweet potato leaves? Because they are too hard, it might taste better if you cut them open."
+      },
+      "details": {
+        "food": 5,
+        "service": 5,
+        "atmosphere": 5
+      }
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps_reviews&hl=en&next_page_token=CAESY0NBRVFDQnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSM0JvU1V4VE1sOWZSV2hCTFV0bFpsWm5YMlJsVVhST2IwRnFRVUZCUVVGQlIyZHVPVEoxUlVOaGJVVm5kRXhaV1VGRFNVRQ%3D%3D&place_id=ChIJ86wbzDxs2jERibqKtPyIII0&sort_by=newestFirst",
+    "next_page_token": "CAESY0NBRVFDQnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSM0JvU1V4VE1sOWZSV2hCTFV0bFpsWm5YMlJsVVhST2IwRnFRVUZCUVVGQlIyZHVPVEoxUlVOaGJVVm5kRXhaV1VGRFNVRQ=="
+  }
+}

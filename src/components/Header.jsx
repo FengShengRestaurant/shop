@@ -1,6 +1,5 @@
-// src/components/Header.jsx
-import { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import LanguageSelector from './LanguageSelector';
@@ -10,21 +9,37 @@ import { navigation as navItems } from '../data/navigation'; // Import navigatio
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language } = useLanguage(); // Access current language
+  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
 
   // Select navigation items based on current language
   const navigation = navItems[language] || navItems.en;
 
+  // Detect scroll to change header background
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-transparent">
+    <header
+      className={`sticky top-0 z-50 transition-colors duration-300 ${
+        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}
+    >
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              alt="Company Logo"
-              src="./logo512.png"
-              className="h-10 w-auto"
-            />
+            <img alt="Company Logo" src="./logo512.png" className="h-10 w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -44,35 +59,25 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <LanguageSelector />
         </div>
       </nav>
-      <Dialog
-        as="div"
-        className="relative z-50 lg:hidden"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-        static
-      >
+
+      {/* Mobile Menu */}
+      <Dialog as="div" className="relative z-50 lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         {mobileMenuOpen && (
-          <div
-            className={`fixed inset-0 bg-black bg-opacity-25 transition-opacity duration-300 ease-in-out ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'
-              }`}
-          />
+          <div className="fixed inset-0 bg-black bg-opacity-25 transition-opacity duration-300 ease-in-out" />
         )}
         <div
-          className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white px-6 py-6 shadow-xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-            }`}
+          className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white px-6 py-6 shadow-xl transform transition-transform duration-300 ease-in-out ${
+            mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
         >
           <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt="Company Logo"
-                src="./logo512.png"
-                className="h-10 w-auto"
-              />
+              <img alt="Company Logo" src="./logo512.png" className="h-10 w-auto" />
             </Link>
             <button
               type="button"
@@ -91,12 +96,13 @@ export default function Header() {
                     key={item.name}
                     to={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
                 ))}
               </div>
-              <div className='py-6'>
+              <div className="py-6">
                 <LanguageSelector />
               </div>
             </div>
