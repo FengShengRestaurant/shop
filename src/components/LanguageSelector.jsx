@@ -15,7 +15,7 @@ const LanguageSelector = () => {
       <button
         onClick={() => switchLanguage('en')}
         aria-pressed={language === 'en'}
-        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-1 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-3 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           language === 'en'
             ? 'bg-orange text-white'
             : 'border border-orange text-orange bg-transparent hover:bg-bright-yellow focus:ring-orange hover:text-black'
@@ -28,7 +28,7 @@ const LanguageSelector = () => {
       <button
         onClick={() => switchLanguage('zh')}
         aria-pressed={language === 'zh'}
-        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-1 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-3 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           language === 'zh'
             ? 'bg-orange text-white'
             : 'border border-orange text-orange bg-transparent hover:bg-bright-yellow focus:ring-orange hover:text-black'
@@ -41,7 +41,7 @@ const LanguageSelector = () => {
       <button
         onClick={() => switchLanguage('ms')}
         aria-pressed={language === 'ms'}
-        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-1 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`w-full lg:min-w-[130px] px-4 py-2 lg:px-2 lg:py-3 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           language === 'ms'
             ? 'bg-orange text-white'
             : 'border border-orange text-orange bg-transparent hover:bg-bright-yellow focus:ring-orange hover:text-black'

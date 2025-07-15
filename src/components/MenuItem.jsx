@@ -12,16 +12,17 @@ const MenuItem = ({ name, photoUrl }) => {
   return (
     <div className="w-[14rem] mx-auto bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Image Section */}
-      <div className="w-full h-48 overflow-hidden">
+      <div className="relative w-full h-52 overflow-hidden">
         <img
           src={getImageUrl(photoUrl)}
           alt={name}
           className="w-full h-full object-cover"
           />
+          <div className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-b from-transparent to-white backdrop-blur-sm" />
       </div>
 
       {/* Content Section */}
-      <div className="p-4">
+      <div className="p-2">
         {/* Menu Item Name */}
         <h3 className="text-xl font-bold text-gray-800 mb-2">{name}</h3>
         

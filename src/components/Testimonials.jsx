@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, UseEffect, useEffect } from 'react';
 import reviewData from '../data/testimonials.json';
 import { useLanguage } from '../context/LanguageContext'; // Language Context
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
-import Typography from '@mui/material/Typography';
+import { HiArrowRight } from 'react-icons/hi';
+import { TrySharp } from '@mui/icons-material';
+
 
 const StarRating = ({ rating }) => {
      return (
@@ -27,9 +29,36 @@ const StarRating = ({ rating }) => {
      );
 };
 
+// API request to fetch the reviews
+// https://serpapi.com/search?engine=google_maps_reviews&api_key=66ef02937f96e6b9dd52649e3f616678e78085be8c10201b344e20c3adc556bc&place_id=ChIJ86wbzDxs2jERibqKtPyIII0&sort_by=newestFirst
+
+const reviewsUrl = 'https://serpapi-proxy.bensonngu25.workers.dev'
+
 const Testimonials = () => {
-     const reviews = reviewData.reviews;
+     const [reviews, setReviews] = useState([]);
      const { language } = useLanguage();
+
+     const fetchReviews = async () => {
+          try {
+               const response = await fetch(
+                    reviewsUrl
+               )
+               const data = await response.json();
+               if (data && data.reviews) {
+                    setReviews(data.reviews);
+               } else {
+                    console.error('No reviews found in the response');
+               }
+          } catch (error) {
+               console.error('Failed to fetch reviews:', error);
+          }
+     }
+
+     useEffect(() => {
+          fetchReviews();
+     }, [])
+
+
 
      return (
           <section className=" py-10">
@@ -42,15 +71,15 @@ const Testimonials = () => {
 
                <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {reviews.map((review, index) => (
-                         <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-300">
+                         <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-300 flex flex-col">
                               <div className="flex items-center space-x-4 mb-4">
                                    <img
                                         src={review.user.thumbnail}
                                         alt={review.user.name}
-                                        className="w-12 h-12 rounded-full object-cover"
+                                        className="w-12 h-12 object-cover"
                                    />
                                    <div>
-                                        <p className="font-semibold text-gray-800">{review.user.name}</p>
+                                        <p className='text-lg font-semibold text-gray-900'>{review.user.name}</p>
                                         <p className="text-sm text-gray-500">
                                              {review.user.local_guide && <span className="font-medium text-orange">Local Guide · </span>}
                                              {new Date(review.iso_date).toLocaleDateString()}
@@ -60,7 +89,7 @@ const Testimonials = () => {
 
                               <StarRating rating={review.rating} />
 
-                              <p className="text-gray-700 mb-4 whitespace-pre-line">"{review.extracted_snippet?.original || 'No review text provided.'}"</p>
+                              <p className="text-gray-700 mb-4 whitespace-pre-line">{review.extracted_snippet?.original || 'No review text provided.'}</p>
 
                               {review.details && (
                                    <div className="text-sm text-gray-500 space-y-1">
@@ -69,15 +98,17 @@ const Testimonials = () => {
                                         <p>🏠 Atmosphere: {review.details.atmosphere}/5</p>
                                    </div>
                               )}
+                              <div className='flex justify-end mt-auto pt-4'>
+                                   <a
+                                        href={review.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-4 inline-flex items-center gap-1 text-orange font-medium"
+                                   >
+                                        Read full review <HiArrowRight className="w-5 h-5 text-orange inline-block" />
 
-                              <a
-                                   href={review.link}
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   className="mt-4 inline-block text-orange font-medium hover:underline"
-                              >
-                                   Read full review →
-                              </a>
+                                   </a>
+                              </div>
                          </div>
                     ))}
                </div>

@@ -41,7 +41,7 @@ const Menu = () => {
                 setFilterType(category.type);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className={`text-lg px-3 lg:px-4 py-1  lg:py-2 whitespace-nowrap rounded-md hover:bg-bright-yellow ease-in-out duration-200 ${filterType === category.type
+              className={`text-lg px-4 lg:px-5 py-2 lg:py-3 whitespace-nowrap rounded-md hover:bg-bright-yellow ease-in-out duration-200 ${filterType === category.type
                   ? 'bg-orange font-bold'
                   : 'text-gray-700 hover:bg-orange-200 font-semibold'
                 }`}

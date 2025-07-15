@@ -123,7 +123,7 @@ const Contact = () => {
             className="w-[80vw] py-16 sm:py-24 lg:py-32 text-center px-4 sm:px-6 lg:px-8"
             id="contact-content"
           >
-            <h1 className="text-4xl font-extrabold text-gray-900 mb-8">
+            <h1 className="text-6xl font-extrabold text-gray-900 mb-8">
               {content.contactUs}
             </h1>
 

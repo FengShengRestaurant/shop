@@ -27,7 +27,7 @@
         {
           "name": {
             "zh": "白菜汤",
-            "en": "zh Choy Sum Soup",
+            "en": "Chinese Choy Sum Soup",
             "ms": "Sup Kubis Cina"
           },
           "photo_url": ""
@@ -53,7 +53,7 @@
         {
           "name": {
             "zh": "炸肉",
-            "en": "Crispy Fried Pork",
+            "en": "Deep Fried Pork",
             "ms": "Daging Babi Goreng Rangup"
           },
           "photo_url": ""
@@ -417,7 +417,7 @@
       "name": {
         "zh": "鱼片",
         "en": "Fish Fillet",
-        "ms": "Ikan Fillet"
+        "ms": "Ikan Keping"
       },
       "items": [
         {
@@ -715,7 +715,7 @@
       "name": {
         "zh": "单点面类",
         "en": "Ala Carte (Noodle)",
-        "ms": "Mi Ala Carte"
+        "ms": "Mee Ala Carte"
       },
       "items": [
         {

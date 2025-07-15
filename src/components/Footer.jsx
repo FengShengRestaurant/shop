@@ -8,19 +8,25 @@ const Footer = () => {
   // Footer content for different languages
   const content = {
     en: {
-      copyright: '&copy; 2024 Restaurant Feng Sheng. All rights reserved.',
+      copyright: '&copy; 2025 Restaurant Feng Sheng. All rights reserved.',
       businessHours: 'Business Hours:',
       openTime: 'Monday - Sunday: 11:30 AM - 8:30 PM',
       closedTime: 'Closed on Wednesday',
     },
     zh: {
-      copyright: '&copy; 2024 丰盛苦瓜汤餐厅。版权所有。',
+      copyright: '&copy; 2025 丰盛苦瓜汤餐厅。版权所有。',
       businessHours: '营业时间:',
       openTime: '周一至周日: 上午11:30 - 晚上8:30',
       closedTime: '每周三休息',
     },
+    ms: {
+      copyright: '&copy; 2025 Restoran Feng Sheng. Hak cipta terpelihara.',
+      businessHours: 'Waktu Perniagaan:',
+      openTime: 'Isnin - Ahad: 11:30 Pagi - 8:30 Malam',
+      closedTime: 'Tutup pada hari Rabu',
+    }
   };
-  
+
 
   const { copyright, businessHours, openTime, closedTime } =
     content[language] || content.en;
