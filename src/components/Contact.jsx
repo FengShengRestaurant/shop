@@ -1,5 +1,6 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
+import {Helmet} from 'react-helmet';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import { useLanguage } from '../context/LanguageContext'; // Adjust the path if necessary
@@ -94,6 +95,19 @@ const Contact = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="bg-white min-h-screen flex flex-col">
+        {/* ✅ SEO Helmet tags */}
+        <Helmet>
+          <title>Contact Us – Restaurant Feng Sheng</title>
+          <meta
+              name="description"
+              content="Get in touch with Restaurant Feng Sheng. Visit us in person or contact us via phone, WhatsApp, or email. We're open daily (except Wednesday)."
+          />
+          <link
+              rel="canonical"
+              href="https://fengshengrestaurant.github.io/shop/contact-us"
+          />
+        </Helmet>
+
         <div className="flex-grow flex flex-col justify-center items-center relative isolate">
           <div
             aria-hidden="true"
@@ -193,7 +207,12 @@ const Contact = () => {
             <div className="mt-8">
               <button
                 onClick={openMapsApp}
-                className="px-4 py-2 rounded font-bold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md border border-orange text-orange bg-transparent hover:bg-bright-yellow hover:text-black focus:ring-orange"
+                className="px-4 py-2 rounded-md font-semibold text-sm lg:text-base
+             text-brown border border-orange bg-white bg-opacity-50
+             hover:bg-bright-yellow hover:text-brown
+             transition-colors duration-200 ease-in-out
+             focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
+                aria-label="Open In Maps App"
               >
                 {content.openInMaps}
               </button>

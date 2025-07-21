@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
 import MenuItem from './MenuItem';
+import { Helmet } from "react-helmet";
+
 
 // Import menu item JSON
 import MenuItemData from '../data/menu.json';
@@ -29,6 +31,19 @@ const Menu = () => {
 
   return (
     <div className="bg-white min-h-screen">
+      {/* ✅ SEO Helmet tags */}
+      <Helmet>
+        <title>Our Menu – Restaurant Feng Sheng</title>
+        <meta
+            name="description"
+            content="Explore our delicious Hakka cuisine menu including bitter gourd soup, pork belly dishes, and more. Authentic flavors at affordable prices."
+        />
+        <link
+            rel="canonical"
+            href="https://fengshengrestaurant.github.io/shop/menu"
+        />
+      </Helmet>
+
       {/* Navigation Bar */}
       <nav className="sticky top-20 z-50 bg-white shadow-md">
         <div className="flex gap-4 p-4 overflow-x-auto scrollbar-hide">

@@ -1,8 +1,12 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import Notification from './Notification'; // Import Notifications component
-import { Link } from 'react-router-dom';
 import Testimonials from './Testimonials';
+
+
+import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+
 export default function Hero() {
   const { language } = useLanguage();
 
@@ -35,6 +39,16 @@ export default function Hero() {
 
   return (
     <div className="bg-white flex flex-col">
+      {/* ✅ SEO Helmet tags */}
+      <Helmet>
+        <title>Restaurant Feng Sheng – Authentic Hakka Cuisine in Malaysia</title>
+        <meta
+            name="description"
+            content="Welcome to Restaurant Feng Sheng. Discover authentic Hakka cuisine, customer reviews, and our latest updates. Dine with us or explore our signature dishes online!"
+        />
+        <link rel="canonical" href="https://fengshengrestaurant.github.io/shop" />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="min-h-screen flex-grow flex flex-col justify-center items-center relative isolate">
         <div
@@ -53,7 +67,7 @@ export default function Hero() {
           <h1 className="text-center text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl leading-tight">
             {welcome}
             <br />
-            <span className="text-orange">{businessName}</span>
+            <span className="text-orange drop-shadow-[2px_2px_2px_rgba(0,0,0,0.2)]">{businessName}</span>
           </h1>
           <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
             {description}

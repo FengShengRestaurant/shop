@@ -12,7 +12,12 @@ export const contactContent = {
     language: 'Language',
     english: 'English',
     chinese: '中文',
-    malay: 'Bahasa Melayu'
+    malay: 'Bahasa Melayu',
+    labels: {
+      en: 'Switch to English Language',
+      zh: 'Switch to Chinese Language',
+      ms: 'Tukar ke Bahasa Melayu',
+    },
   },
   zh: {
     contactUs: '联系我们',
@@ -27,7 +32,12 @@ export const contactContent = {
     language: '语言',
     english: 'English',
     chinese: '中文',
-    malay: 'Bahasa Melayu'
+    malay: 'Bahasa Melayu',
+    labels: {
+      en: '切换为英文语言',
+      zh: '切换为中文语言',
+      ms: '切换为马来语',
+    }
   },
   ms: {
     contactUs: 'Hubungi Kami',
@@ -42,6 +52,11 @@ export const contactContent = {
     language: 'Bahasa',
     english: 'English',
     chinese: '中文',
-    malay: 'Bahasa Melayu'
+    malay: 'Bahasa Melayu',
+    labels: {
+      en: 'Tukar ke Bahasa Inggeris',
+      zh: 'Tukar ke Bahasa Cina',
+      ms: 'Tukar ke Bahasa Melayu',
+    }
   }
 };

@@ -54,6 +54,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-bright-yellow hover:text-orange duration-300 ease-in-out text-xl"
+            aria-label="Facebook"
           >
             <i className="fab fa-facebook"></i>
           </a>
