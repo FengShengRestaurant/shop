@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://fengshengrestaurant.github.io/shop/</loc>
+        <lastmod>2025-07-22</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fengshengrestaurant.github.io/shop/menu</loc>
+        <lastmod>2025-07-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://fengshengrestaurant.github.io/shop/contact-us</loc>
+        <lastmod>2025-07-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
