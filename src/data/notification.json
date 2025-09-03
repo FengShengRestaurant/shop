@@ -63,7 +63,23 @@
         },
         "deadline": "2024-04-01T23:59:59Z",
         "image_url": "https://example.com/images/flash_sale.jpg"
-      }
+      },
+        {
+  "id": 5,
+  "title": {
+    "en": "Shop Closure Notice",
+    "zh": "店铺关闭",
+    "malay": "Notis Penutupan Kedai"
+  },
+  "type": "closure",
+  "message": {
+    "en": "Our shop will be closed from September 5th to September 10th. We apologize for any inconvenience.",
+    "zh": "我们的店铺将于9月5日至9月10日关闭。对此带来的任何不便，我们深表歉意。",
+    "malay": "Kedai kami akan ditutup dari 5 September hingga 10 September untuk musim cuti. Kami mohon maaf atas sebarang kesulitan."
+  },
+  "deadline": "2025-08-11T23:59:59Z",
+  "image_url": ""
+}
     ]
   }
   
