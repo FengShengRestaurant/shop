@@ -1,85 +1,84 @@
 {
-    "notifications": [
-      {
-        "id": 1,
-        "title": {
-          "en": "Holiday Closure",
-          "zh": "假期关闭",
-          "malay": "Penutupan Cuti"
-        },
-        "type": "closure",
-        "message": {
-          "en": "Our shop will be closed from January 24th to January 31st for the holiday season. We apologize for any inconvenience.",
-          "zh": "我们的店铺将于1月24日至1月31日关闭，庆祝假期季节。对此带来的任何不便，我们深表歉意。",
-          "malay": "Kedai kami akan ditutup dari 24 mt-10 flex flex-col gap-6 hingga 31 Januari untuk musim cuti. Kami mohon maaf atas sebarang kesulitan."
-        },
-        "deadline": "2024-01-31T23:59:59Z",
-        "image_url": "https://img.freepik.com/premium-vector/happy-chinese-new-year-2025-year-snake_38689-6535.jpg"
+  "notifications": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Holiday Closure",
+        "zh": "假期关闭",
+        "malay": "Penutupan Cuti"
       },
-      {
-        "id": 2,
-        "title": {
-          "en": "Winter Sale!",
-          "zh": "冬季促销！",
-          "malay": "Jualan Musim Sejuk!"
-        },
-        "type": "sale",
-        "message": {
-          "en": "Enjoy up to 50% off on selected items during our Winter Sale from January 1st to January 15th.",
-          "zh": "在1月1日至1月15日的冬季促销期间，精选商品享受高达50％的折扣。",
-          "malay": "Nikmati diskaun sehingga 50% untuk barangan terpilih semasa Jualan Musim Sejuk kami dari 1 Januari hingga 15 Januari."
-        },
-        "deadline": "2024-01-15T23:59:59Z",
-        "image_url": "https://example.com/images/winter_sale.jpg"
+      "type": "closure",
+      "message": {
+        "en": "Our shop will be closed from January 24th to January 31st for the holiday season. We apologize for any inconvenience.",
+        "zh": "我们的店铺将于1月24日至1月31日关闭，庆祝假期季节。对此带来的任何不便，我们深表歉意。",
+        "malay": "Kedai kami akan ditutup dari 24 mt-10 flex flex-col gap-6 hingga 31 Januari untuk musim cuti. Kami mohon maaf atas sebarang kesulitan."
       },
-      {
-        "id": 3,
-        "title": {
-          "en": "New Menu Launch",
-          "zh": "新菜单发布",
-          "malay": "Pelancaran Menu Baru"
-        },
-        "type": "announcement",
-        "message": {
-          "en": "We are excited to introduce our new seasonal menu! Come and try our latest dishes starting February 1st.",
-          "zh": "我们很高兴地介绍我们的新季节性菜单！从2月1日开始，欢迎品尝我们的最新菜肴。",
-          "malay": "Kami teruja untuk memperkenalkan menu bermusim baru kami! Datang dan cuba hidangan terbaru kami mulai 1 Februari."
-        },
-        "deadline": "2024-02-28T23:59:59Z",
-        "image_url": "https://example.com/images/new_menu.jpg"
+      "deadline": "2024-01-31T23:59:59Z",
+      "image_url": "https://img.freepik.com/premium-vector/happy-chinese-new-year-2025-year-snake_38689-6535.jpg"
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Winter Sale!",
+        "zh": "冬季促销！",
+        "malay": "Jualan Musim Sejuk!"
       },
-      {
-        "id": 4,
-        "title": {
-          "en": "Flash Sale - 24 Hours Only!",
-          "zh": "限时抢购 - 仅限24小时！",
-          "malay": "Jualan Kilat - Hanya 24 Jam!"
-        },
-        "type": "sale",
-        "message": {
-          "en": "Don't miss our exclusive 24-hour flash sale with discounts up to 70% on selected items.",
-          "zh": "不要错过我们独家24小时限时抢购，精选商品最高可享受70％的折扣。",
-          "malay": "Jangan lepaskan jualan kilat eksklusif kami selama 24 jam dengan diskaun sehingga 70% untuk barangan terpilih."
-        },
-        "deadline": "2024-04-01T23:59:59Z",
-        "image_url": "https://example.com/images/flash_sale.jpg"
+      "type": "sale",
+      "message": {
+        "en": "Enjoy up to 50% off on selected items during our Winter Sale from January 1st to January 15th.",
+        "zh": "在1月1日至1月15日的冬季促销期间，精选商品享受高达50％的折扣。",
+        "malay": "Nikmati diskaun sehingga 50% untuk barangan terpilih semasa Jualan Musim Sejuk kami dari 1 Januari hingga 15 Januari."
       },
-        {
-  "id": 5,
-  "title": {
-    "en": "Shop Closure Notice",
-    "zh": "店铺关闭",
-    "malay": "Notis Penutupan Kedai"
-  },
-  "type": "closure",
-  "message": {
-    "en": "Our shop will be closed from September 5th to September 10th. We apologize for any inconvenience.",
-    "zh": "我们的店铺将于9月5日至9月10日关闭。对此带来的任何不便，我们深表歉意。",
-    "malay": "Kedai kami akan ditutup dari 5 September hingga 10 September untuk musim cuti. Kami mohon maaf atas sebarang kesulitan."
-  },
-  "deadline": "2025-08-11T23:59:59Z",
-  "image_url": ""
+      "deadline": "2024-01-15T23:59:59Z",
+      "image_url": "https://example.com/images/winter_sale.jpg"
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "New Menu Launch",
+        "zh": "新菜单发布",
+        "malay": "Pelancaran Menu Baru"
+      },
+      "type": "announcement",
+      "message": {
+        "en": "We are excited to introduce our new seasonal menu! Come and try our latest dishes starting February 1st.",
+        "zh": "我们很高兴地介绍我们的新季节性菜单！从2月1日开始，欢迎品尝我们的最新菜肴。",
+        "malay": "Kami teruja untuk memperkenalkan menu bermusim baru kami! Datang dan cuba hidangan terbaru kami mulai 1 Februari."
+      },
+      "deadline": "2024-02-28T23:59:59Z",
+      "image_url": "https://example.com/images/new_menu.jpg"
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Flash Sale - 24 Hours Only!",
+        "zh": "限时抢购 - 仅限24小时！",
+        "malay": "Jualan Kilat - Hanya 24 Jam!"
+      },
+      "type": "sale",
+      "message": {
+        "en": "Don't miss our exclusive 24-hour flash sale with discounts up to 70% on selected items.",
+        "zh": "不要错过我们独家24小时限时抢购，精选商品最高可享受70％的折扣。",
+        "malay": "Jangan lepaskan jualan kilat eksklusif kami selama 24 jam dengan diskaun sehingga 70% untuk barangan terpilih."
+      },
+      "deadline": "2024-04-01T23:59:59Z",
+      "image_url": "https://example.com/images/flash_sale.jpg"
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Shop Closure Notice",
+        "zh": "店铺关闭",
+        "malay": "Notis Penutupan Kedai"
+      },
+      "type": "closure",
+      "message": {
+        "en": "Our shop will be closed from September 5th to September 10th. We apologize for any inconvenience.",
+        "zh": "我们的店铺将于9月5日至9月10日关闭。对此带来的任何不便，我们深表歉意。",
+        "malay": "Kedai kami akan ditutup dari 5 September hingga 10 September untuk musim cuti. Kami mohon maaf atas sebarang kesulitan."
+      },
+      "deadline": "2025-08-11T23:59:59Z",
+      "image_url": ""
+    }
+  ]
 }
-    ]
-  }
-  
